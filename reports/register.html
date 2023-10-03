@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>계정 만들기</title>
+</head>
+<body>
+<header>
+    <h1>취업 정보 계정 만들기</h1>
+    <p>* 필수 입력 항목</p>
+</header>
+<p>기본 정보</p>
+<form>
+    <label style="display:inline-block;">이름*</label>
+        <input type="text" size="8"><br>
+    <label style="display:inline-block;">이메일*</label>
+        <input type="email" size="15" placeholder="id@domian_name"><br>
+    <label style="display:inline-block;">암호*</label>
+        <input type="text" size="12"><br>
+    <label style="display:inline-block;">암호확인*</label>
+        <input type="text" size="12"><br>
+    <label style="display:inline-block;">모바일 폰*</label>
+        <input type="tel" size="13" placeholder="010-0000-0000"><br>
+    <label style="display:inline-block;">개인 홈페이지*</label>
+        <input type="url" size="30" placeholder="http://"><br>
+    <label style="display:inline-block;">주소*</label>
+        <input type="text" size="30"><br>
+</form>
+<p>학 력</p>
+<form>
+    <label style="display:inline-block;">학교 명*</label>
+        <input type="text" size="12"><br>
+    <label style="display:inline-block;">전공*</label>
+        <input type="text" size="12"><br>
+    <label style="display:inline-block;">졸업 여부*</label>
+        <select name="---선택---">
+            <option value="1">졸업예정</option>
+            <option value="2">졸업</option>
+        </select>
+</form>
+<label style="display:inline-block;">졸업(예정)일</label>
+    <input type="date" size="15" placeholder="연도-월-일"><br>
+<p>업무경력</p>
+<label style="display:inline-block;">근무업체명</label>
+        <input type="text" size="20"><br>
+<label style="display:inline-block;">직위</label>
+        <input type="text" size="10"><br>
+<div id="comment">
+    <label>담당 업무<br>
+        <textarea rows="10" cols="80" placeholder="이전 업체에서 담당한 업무로 기술하시오."></textarea></label>
+</div>
+<label style="display:inline-block;">근무년수</label>
+        <input type="number" min="0" max="10" step="0.5"><span>년</span><br>
+<p>자기소개서</p>
+<span>첨부 파일</span><input type="file" value="파일 선택">
+<p>
+    <input type="submit" value="제출">
+    <input type="reset" value="재작성">
+</p>
+</body>
+</html>
