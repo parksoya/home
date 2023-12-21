@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Super Folio</title>
+    <title>20201053 Soyoung Park</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -29,11 +29,11 @@
   <body id="top">
     <header class="bg-light">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Soyoung Park</a>
+        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
               <li class="nav-item"><a class="nav-link" href="#services">My Works</a></li>
               <li class="nav-item"><a class="nav-link" href="#skills">My Favorites</a></li>
               <li class="nav-item"><a class="nav-link" href="#portfolio">My Interests</a></li>
@@ -53,7 +53,7 @@
         <div class="col-lg-6 p-2"><img class="img-fluid" src='images/illustrations/pipi.png' alt="hello"/></div>
         <div class="col-lg-6">
           <div class="mt-5">
-            <p class="lead text-uppercase mb-1">Hello🤍</p>
+            <p class="lead text-uppercase mb-1">Hi🤍</p>
             <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Soyoung Park</h1>
             <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Web Development Final Project</p>
             <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
@@ -129,12 +129,27 @@
       <p class="mx-auto mb-3" style="max-width:600px">Web Development Coursework</p>
     </div>
     <div class="d-sm-flex">
-      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px; margin-left:120px;">Report 1</button>
-      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" href="#contact">Report 2</button>
-      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" href="#contact">Report 3</button>
-      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" href="#contact">Report 4</button>
+      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px; margin-left:120px;" onclick="loadcw('reports/index.html')">Report 1</button>
+      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" onclick="loadcw('reports/register.html')">Report 2</button>
+      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" onclick="loadcw('reports/bootstrap.html')">Report 3</button>
+      <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;" onclick="loadcw('reports/HW3.html')">Report 4</button>
       <button class="btn btn-primary shadow-sm mt-1 hover-effect" style="margin-right:35px;"><a href="kiwi_talk/friends.html">Extra</a></button>
     </div>
+    <script>
+      function loadcw(cwname) {
+        document.getElementById('iframe-container').src=cwname;
+        document.getElementById('iframe-container').style.height='500px';
+        document.getElementById('iframe-container').style.width='800px';
+      }
+      function loadcw2(cwname) {
+        document.getElementById('carousel-container').src=cwname;
+        document.getElementById('carousel-container').style.height='500px';
+        document.getElementById('carousel-container').style.width='800px';
+      }
+    </script>
+    <iframe id="iframe-container" src="reports/index.html" style="height:500px; width:800px;">
+      #document (https://parksoya.github.io/home/super-folio_free_1-2-0/reports/index.html)
+    </iframe>
   </div>
 </div>
 <div class="section px-3 px-lg-4 pt-5" id="skills">
@@ -147,28 +162,28 @@
     </div>
     <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
       <div class="grid-sizer"></div>
-      <div class="grid-item"><a href="https://www.visitbritain.com/en">
+      <div class="grid-item"><a href="https://en.wikipedia.org/wiki/%C3%96rebro">
           <figure class="portfolio-item"><img src="images/favorites/summer.jpg" data-bp="images/favorites/summer.jpg"/>
             <figcaption>
               <h4 class="h5 mb-0">Season</h4>
               <div>Summer ☀️</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://www.spain.info/en/">
+      <div class="grid-item"><a href="https://www.2foodtrippers.com/danish-morning-bun/">
           <figure class="portfolio-item"><img src="images/favorites/breakfast.jpg" data-bp="images/favorites/breakfast.jpg"/>
             <figcaption>
               <h4 class="h5 mb-0">Breakfast</h4>
               <div>Long black with a sourdough bun ☕</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://www.visitczechia.com/ko-kr">
+      <div class="grid-item"><a href="https://www.visitcopenhagen.com/copenhagen/planning/frederiksberg-gardens-gdk412226">
           <figure class="portfolio-item"><img src="images/favorites/frepark.jpg" data-bp="images/favorites/frepark.jpg"/>
             <figcaption>
               <h4 class="h5 mb-0">Park</h4>
               <div>Frederiksberg Garderns 🏞️</div>
             </figcaption>
           </figure></a></div>
-      <div class="grid-item"><a href="https://visithungary.com/ko">
+      <div class="grid-item"><a href="https://en.wikipedia.org/wiki/%C3%96rebro">
           <figure class="portfolio-item"><img src="images/favorites/nature.jpg" data-bp="images/favorites/nature.jpg"/>
             <figcaption>
               <h4 class="h5 mb-0">Activity</h4>
@@ -176,6 +191,7 @@
             </figcaption>
           </figure></a></div>
       </div>
+    <p class="text-muted text-small">* photos taken by myself in 2023</p>
     </div>
 </div>
 
@@ -252,7 +268,7 @@
 <div class="section px-3 px-lg-4 pt-5" id="experience">
   <div class="container-narrow">
     <div class="text-center mb-5">
-      <h2 class="marker marker-center">Experience</h2>
+      <h2 class="marker marker-center">Experience Highlights</h2>
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -287,6 +303,8 @@
           <div class="card-body px-3 py-2">
             <p> • Student Correspondant at The Study Abroad Foundation</p>
             <p> • Private English Tutor</p>
+            <p> • Receptionist at Rolls-Royce Motor Cars Seoul</p>
+            <p> • Receptionist at McLaren Seoul</p>
           </div>
         </div>
       </div>
@@ -314,7 +332,7 @@
               <div>
                 <h3 class="h5 mb-1">Relevant Coursework</h3>
                 <div class="text-muted text-small">2020-2023</div>
-              </div><
+              </div>
             </div>
           </div>
           <div class="card-body px-3 py-2">
